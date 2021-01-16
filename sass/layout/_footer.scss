@@ -1,0 +1,55 @@
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.page-footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .footer-box:not(:last-child) {
+    margin-right: 70px;
+  }
+
+  .footer-box:nth-child(2) {
+    margin-right: 93px;
+  }
+}
+
+.footer-box .text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.142;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.contacts-list-footer {
+  width: 231px;
+
+  .item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.contacts-list-footer .link {
+  display: block;
+
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  line-height: 1.71;
+  text-decoration: none;
+  font-style: normal;
+
+  transition: 250ms $timing-fn;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.contacts-list-footer .mail {
+  color: #ffffff;
+}

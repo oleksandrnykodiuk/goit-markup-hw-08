@@ -1,0 +1,26 @@
+// header
+.logo {
+  color: #000000;
+  font-family: Raleway, sans-serif;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  & .accent {
+    color: $accent-color;
+  }
+}
+
+// footer
+
+.page-footer .logo {
+  /* width: 231px; */
+  display: block;
+  margin-bottom: 20px;
+}
+
+.logo-footer {
+  color: #ffffff;
+}

@@ -1,0 +1,65 @@
+/* Logo */
+
+/* hero */
+
+/* Advantages */
+
+/* .about-section */
+
+/* Team */
+
+.socials {
+  /* display: flex; */
+
+  margin-bottom: 30px;
+}
+
+.socials-list {
+  display: flex;
+  justify-content: center;
+}
+
+.socials-link {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-color);
+
+  transition: 250ms var(--timing-fn);
+}
+
+.socials-item:nth-child(-n + 3) {
+  margin-right: 10px;
+}
+
+.socials-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  color: #ffffff;
+  background-color: var(--acccent-color);
+}
+/* end team */
+
+/* clients */
+
+/* end clients */
+
+/* footer */
+
+/* Portfolio */
+
+/* buttons */
+
+/* projects */
+
+/* Modal  */
+
+/* End backdrop */

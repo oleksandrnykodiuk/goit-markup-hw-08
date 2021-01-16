@@ -1,0 +1,26 @@
+.work-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.work-list .item {
+  position: relative;
+}
+
+.work-overlay {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+
+  min-height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
