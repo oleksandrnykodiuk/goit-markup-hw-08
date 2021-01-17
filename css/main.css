@@ -1,6 +1,7 @@
 body {
   background-color: #ffffff;
   color: #212121;
+  font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
 }
@@ -37,16 +38,34 @@ img {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section-title {
@@ -516,42 +535,66 @@ img {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #2f303a;
   max-width: 1600px;
   text-align: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-phone.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.hero .box-container {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-phone@2x.jpg);
+  }
+}
+
+.hero-box {
   max-width: 696px;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .hero .title {
-  margin-bottom: 30px;
-  color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.615;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
 }
 
-.advantages-section .container {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet.jpg);
+  }
 }
 
-.advantages-list {
-  display: flex;
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet@2x.jpg);
+  }
 }
 
-.advantages-list .item:not(:last-child) {
-  margin-right: 30px;
-  max-width: 270px;
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 280px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
+  }
+  .hero .title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero@2x.jpg);
+  }
 }
 
 .advantages-list .title {
@@ -559,26 +602,58 @@ img {
   color: #212121;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.17;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .advantages-list .text {
   color: #757575;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
 
+@media screen and (max-width: 767px) {
+  .advantages-list .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .advantages-icon {
   display: flex;
-  width: 270px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantages-list {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .advantages-list .item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list {
+    display: flex;
+  }
+  .advantages-list .item {
+    width: 270px;
+  }
+  .advantages-list .item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .work-list {
