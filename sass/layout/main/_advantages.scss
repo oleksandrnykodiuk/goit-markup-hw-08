@@ -1,5 +1,5 @@
 .advantages-list {
-  & .title {
+  .title {
     margin-bottom: 10px;
     color: $primary-text-color;
     font-weight: 700;
@@ -9,7 +9,7 @@
     text-align: center;
   }
 
-  & .text {
+  .text {
     color: $secondary-text-color;
     font-weight: 400;
     font-size: 14px;
@@ -42,7 +42,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    & .item {
+    .item {
       width: calc((100% - 4 * 15px) / 2);
       margin: 15px;
     }
@@ -53,7 +53,7 @@
   .advantages-list {
     display: flex;
 
-    & .item {
+    .item {
       width: 270px;
     }
   }

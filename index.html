@@ -126,17 +126,17 @@
         </div>
       </section>
       <!--about-->
-      <!-- <section class="about-section section">
+      <section class="about-section section">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="work-list list">
             <li class="item">
               <a href="#">
                 <img
-                  src="./images/work/box1.jpg"
                   alt="написание кода"
-                  width="370"
-                  height="294"
+                  src="./images/work/about1.jpg"
+                  srcset="./images/work/about1@2x.jpg 2x"
+                  width="370px"
                 />
               </a>
               <div class="work-overlay">
@@ -146,10 +146,10 @@
             <li class="item">
               <a href="#">
                 <img
-                  src="./images/work/box2.jpg"
-                  alt="адаптация сайта"
-                  width="370"
-                  height="294"
+                  alt="написание кода"
+                  src="./images/work/about2.jpg"
+                  srcset="./images/work/about2@2x.jpg 2x"
+                  width="370px"
                 />
               </a>
               <div class="work-overlay">
@@ -159,10 +159,10 @@
             <li class="item">
               <a href="#">
                 <img
-                  src="./images/work/box3.jpg"
-                  alt="оформление сайта"
-                  width="370"
-                  height="294"
+                  alt="написание кода"
+                  src="./images/work/about3.jpg"
+                  srcset="./images/work/about3@2x.jpg 2x"
+                  width="370px"
                 />
               </a>
               <div class="work-overlay">
@@ -171,20 +171,40 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--team-->
-      <!-- <section class="team-section section">
+      <section class="team-section section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="item">
-              <img
-                class="photo"
-                src="./images/team/person-1.jpg"
-                alt="мужчина продакт дизайнер"
-                width="270"
-                height="260"
-              />
+              <picture class="photo">
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/team/person1-mobile.jpg    1x,
+                    ./images/team/person1-mobile@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/person1-tablet.jpg    1x,
+                    ./images/team/person1-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/person1-desktop.jpg    1x,
+                    ./images/team/person1-desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team/person-1.jpg"
+                  alt="мужчина продакт дизайнер"
+                />
+              </picture>
               <div class="team-info">
                 <h3 class="title">Игорь Демьяненко</h3>
                 <p class="text">Product Designer</p>
@@ -221,13 +241,33 @@
               </div>
             </li>
             <li class="item">
-              <img
-                class="photo"
-                src="./images/team/person-2.jpg"
-                alt="женщина фронт-енд разработчик"
-                width="270"
-                height="260"
-              />
+              <picture class="photo">
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/team/person2-mobile.jpg    1x,
+                    ./images/team/person2-mobile@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/person2-tablet.jpg    1x,
+                    ./images/team/person2-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/person2-desktop.jpg    1x,
+                    ./images/team/person2-desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team/person-2.jpg"
+                  alt="мужчина продакт дизайнер"
+                />
+              </picture>
               <div class="team-info">
                 <h3 class="title">Ольга Репина</h3>
                 <p class="text">Frontend Developer</p>
@@ -264,13 +304,33 @@
               </div>
             </li>
             <li class="item">
-              <img
-                class="photo"
-                src="./images/team/person-3.jpg"
-                alt="мужчина маркетолог"
-                width="270"
-                height="260"
-              />
+              <picture class="photo">
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/team/person3-mobile.jpg    1x,
+                    ./images/team/person3-mobile@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/person3-tablet.jpg    1x,
+                    ./images/team/person3-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/person3-desktop.jpg    1x,
+                    ./images/team/person3-desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team/person-3.jpg"
+                  alt="мужчина маркетолог"
+                />
+              </picture>
               <div class="team-info">
                 <h3 class="title">Николай Тарасов</h3>
                 <p class="text">Marketing</p>
@@ -307,13 +367,33 @@
               </div>
             </li>
             <li class="item">
-              <img
-                class="photo"
-                src="./images/team/person-4.jpg"
-                alt="мужчина ui дизайнер"
-                width="270"
-                height="260"
-              />
+              <picture class="photo">
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/team/person4-mobile.jpg    1x,
+                    ./images/team/person4-mobile@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/person4-tablet.jpg    1x,
+                    ./images/team/person4-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/person4-desktop.jpg    1x,
+                    ./images/team/person4-desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team/person-4.jpg"
+                  alt="мужчина продакт дизайнер"
+                />
+              </picture>
               <div class="team-info">
                 <h3 class="title">Михаил Ермаков</h3>
                 <p class="text">UI Designer</p>
@@ -351,9 +431,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="clients-section">
+      <section class="clients-section section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="clients-list list">
@@ -401,7 +481,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!--footer-->
     <!-- <footer class="page-footer">
