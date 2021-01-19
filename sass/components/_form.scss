@@ -136,17 +136,9 @@
 
 // footer-subscription
 
-.subscription.footer-box {
-  width: 570px;
-}
-
-.subscription-form {
-  display: flex;
-  align-items: center;
-}
-
 .subscription-field {
   position: relative;
+  margin-bottom: 20px;
 }
 
 .subscription-label {
@@ -163,15 +155,15 @@
 
 .subscription-input:focus + .subscription-label,
 .subscription-input:not(:placeholder-shown) + .subscription-label {
-  transform: translate(-170%, -50%) scale(1.25);
+  transform: translate(-200%, -50%) scale(1.25);
   color: #ffffff;
 }
 
 .subscription-input {
   display: inline-block;
-  width: 358px;
+  width: 100%;
   padding: 15px 16px;
-  margin-right: 12px;
+  // margin-right: 12px;
 
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -192,4 +184,20 @@
 .telegram-icon {
   margin-left: 10px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription-form {
+    display: flex;
+  }
+
+  .subscription-field {
+    width: 100%;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+
+  .subscription.footer-box {
+    width: 570px;
+  }
 }
