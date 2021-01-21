@@ -523,6 +523,10 @@ img {
   margin-bottom: 94px;
 }
 
+.contacts-list {
+  -max-width: 100%;
+}
+
 @media screen and (max-width: 767px) {
   .projects-list > .item:not(:last-child) {
     margin-bottom: 30px;
