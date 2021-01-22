@@ -2,6 +2,16 @@
   display: inline-flex;
   border: none;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.icon-cross,
+.icon-menu {
+  fill: currentColor;
 }
 
 .menu-button .icon-cross {
@@ -21,21 +31,35 @@
   top: 10px;
   right: 15px;
   z-index: 99;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-container {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: tomato;
+  background-color: $primary-background-color;
 
-  padding: 40px 48px;
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
 
-  &.is-open {
-    display: block;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 48px;
+    padding-right: 15px;
+
+    &.is-open {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }
