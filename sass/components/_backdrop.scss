@@ -8,6 +8,8 @@
 
   opacity: 1;
   transition: opacity 250ms $timing-fn;
+
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {

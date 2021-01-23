@@ -173,20 +173,31 @@
     color: $accent-color;
   }
 
-  .link.mail {
+  .contacts-list .link.mail {
     font-size: 24px;
     line-height: 1.16;
     color: $secondary-text-color;
   }
 }
 
-.address-icon {
+.address-icon-mail,
+.address-icon-mobile {
   margin-right: 8px;
   fill: currentColor;
 
   @media screen and (max-width: 767px) {
     display: none;
   }
+}
+
+.address-icon-mail {
+  width: 14px;
+  height: 10px;
+}
+
+.address-icon-mobile {
+  width: 10px;
+  height: 14px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -196,11 +207,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .contacts {
-    display: flex;
-    margin-left: auto;
-  }
-
   .contacts-list {
     display: flex;
     align-items: center;
@@ -211,8 +217,24 @@
     margin-right: 30px;
   }
 
-  .address-icon {
+  .contacts-list .link {
+    font-size: 14px;
+    line-height: 1.17;
+  }
+
+  .address-icon-mail,
+  .address-icon-mobile {
     margin-right: 10px;
+  }
+
+  .address-icon-mail {
+    width: 16px;
+    height: 12px;
+  }
+
+  .address-icon-mobile {
+    width: 10px;
+    height: 16px;
   }
 }
 
