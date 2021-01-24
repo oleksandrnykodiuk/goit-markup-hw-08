@@ -387,12 +387,20 @@ img {
 }
 
 .user-policy {
-  display: block;
-  font-size: 14px;
-  line-height: 1.78;
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.16;
   text-align: center;
   margin-bottom: 30px;
   color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .user-policy {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .policy-link {
@@ -400,7 +408,6 @@ img {
 }
 
 .user-policy::before {
-  display: inline-flex;
   content: '';
   width: 16px;
   height: 15px;
