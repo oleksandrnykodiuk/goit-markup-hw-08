@@ -90,10 +90,10 @@
 }
 
 .user-policy {
-  display: inline-flex;
-  align-items: center;
+  display: block;
   font-size: 12px;
   line-height: 1.16;
+  letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 30px;
   color: $secondary-text-color;
@@ -109,6 +109,7 @@
 }
 
 .user-policy::before {
+  display: inline-flex;
   content: '';
   width: 16px;
   height: 15px;

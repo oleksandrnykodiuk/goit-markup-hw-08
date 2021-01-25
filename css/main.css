@@ -285,7 +285,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   color: #212121;
-  background-color: #ffffff;
+  background-color: transparent;
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -387,10 +387,10 @@ img {
 }
 
 .user-policy {
-  display: inline-flex;
-  align-items: center;
+  display: block;
   font-size: 12px;
   line-height: 1.16;
+  letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 30px;
   color: #757575;
@@ -408,6 +408,7 @@ img {
 }
 
 .user-policy::before {
+  display: inline-flex;
   content: '';
   width: 16px;
   height: 15px;

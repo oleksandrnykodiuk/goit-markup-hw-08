@@ -418,10 +418,10 @@ img {
 }
 
 .user-policy {
-  display: inline-flex;
-  align-items: center;
+  display: block;
   font-size: 12px;
   line-height: 1.16;
+  letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 30px;
   color: #757575;
@@ -439,6 +439,7 @@ img {
 }
 
 .user-policy::before {
+  display: inline-flex;
   content: '';
   width: 16px;
   height: 15px;
@@ -779,10 +780,6 @@ img {
 .projects-link:hover, .projects-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   transform: translateY(0);
-}
-
-.projects-list .photo {
-  width: 100%;
 }
 
 .projects-list .title {
